@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import './App.css';
-import { Principal } from './Principal';
+import { Principal } from './componentes/Principal';
 import theme from './theme';
 
 function App() {
