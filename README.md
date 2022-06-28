@@ -44,3 +44,71 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+####Instalar Google Chrome via Firefox
+Autenticar no Google
+
+####Instalar VsCode via Loja
+Autenticar no VSCode
+
+
+###install Docker
+sudo apt-get update
+
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  sudo apt-get update
+  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+
+
+#Install nodejs Using Ubuntu
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+node --version
+npm --version
+
+
+###Install Github
+sudo apt-get install git
+
+
+
+
+####Install React & material-ui
+npx create-react-app --template typescript nomedoarquivo
+
+#Baixar projeto do Git via VSCODE
+#copiar Dokerfile, docker-compose.yaml, .docker para pasta do novo projeto
+#na pasta, digitar
+chmod +x .docker/entrypoint
+docker compose up
+#entrar no container:
+docker exec -it container sh
+cd /home/node/app
+npm install @material-ui/core --save
+#ou
+npm install @mui/material @emotion/react @emotion/styled --save
+#copiar o restante dos arquivos do git para a pasta do novo projeto
+
+
+
+
+
+git config --global user.email claudfatec@gmail.com
+git config --global user.name claudfatec
+
+
+
