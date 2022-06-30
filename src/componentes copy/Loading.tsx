@@ -6,6 +6,6 @@ type Props = {
 };
 export const Loading = (props: Props) => {
     return (
-            <Button variant='outlined'>Loading...</Button>
+            <Button variant='outlined' >Loading...</Button>
     );
 };
