@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Link } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 interface TituloProps {
@@ -16,13 +16,13 @@ interface TituloProps {
         </Grid>
 
         <Grid item xs={12} md= {4}color="primary">
-        <Typography component="h2" variant="h6"  color="inherit" gutterBottom>
-          Titulo
-        </Typography>
+          <Typography component="h2" variant="h6"  color="inherit" gutterBottom>
+            Titulo
+          </Typography>
        </Grid>
        <Grid item xs={12} md= {4}color="primary">
           <Typography component="h2" variant="h6"  color="inherit" gutterBottom>
-            Status
+            <Link href="http://claudfatec.westeurope.cloudapp.azure.com/index.php">Home</Link>
           </Typography>
         </Grid>
       </Grid>

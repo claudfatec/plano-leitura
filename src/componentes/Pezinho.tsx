@@ -8,10 +8,12 @@ type Props = {
 };
 export const Pezinho = (props: Props) => {
     return (
+        <div>
             <Grid container>
-                <Grid item xs><Previous /></Grid>
-                <Grid item xs={6}><Loading /></Grid>
-                <Grid item xs><Next /></Grid>
+                <Grid item xs={12} md={4}><Previous /></Grid>
+                <Grid item xs={12} md={4}><Loading /></Grid>
+                <Grid item xs={12} md={4}><Next /></Grid>
             </Grid>
+        </div>
     );
 };
